@@ -352,6 +352,22 @@
   .portal .doc .pg{flex:0 0 26px;height:32px;border-radius:4px;background:#fff;border:1.5px solid var(--soul);position:relative}
   .portal .doc .pg:before{content:"";position:absolute;left:5px;right:5px;top:7px;height:2px;background:var(--soul);box-shadow:0 5px 0 rgba(236,29,94,.5),0 10px 0 rgba(236,29,94,.5)}
 
+  /* ---- talk themes (System/Soul/Strategy) ---- */
+  .themes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:40px}
+  .theme{background:#fff;border:1px solid var(--line);border-top:5px solid var(--line);border-radius:16px;padding:32px 30px;box-shadow:0 1px 3px rgba(60,66,88,.05)}
+  .theme.system{border-top-color:var(--system)}
+  .theme.soul{border-top-color:var(--soul)}
+  .theme.strategy{border-top-color:var(--strategy)}
+  .theme .tag{font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--navy)}
+  .theme.system .tag{color:var(--system-ink)}
+  .theme.soul .tag{color:var(--soul)}
+  .theme.strategy .tag{color:var(--strategy)}
+  .theme h3{font-size:1.45rem;margin:6px 0 10px}
+  .theme p{font-size:.95rem}
+  .theme .areatags{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px}
+  .theme .areatags span{font-size:.78rem;font-weight:500;color:var(--navy);background:var(--paper);border:1px solid var(--line);border-radius:99px;padding:6px 13px}
+  @media(max-width:820px){.themes{grid-template-columns:1fr}}
+
   /* ---- six-area overview ---- */
   .areas{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:36px}
   .area{border:1px solid var(--line);border-radius:14px;padding:22px 22px;border-top:4px solid var(--soul);background:#fff}
@@ -421,7 +437,7 @@
 </head>
 <body>
 
-<div class="launch">Launching <b>October 1</b> &mdash; get in now at the starting member rate. <a href="https://calendar.app.google/QuSxK2GUxFQ114YC6" target="_blank" rel="noopener">Save your spot &rarr;</a></div>
+<div class="launch">Launching <b>September 1</b> &mdash; get in now at the starting member rate. <a href="https://calendar.app.google/QuSxK2GUxFQ114YC6" target="_blank" rel="noopener">Save your spot &rarr;</a></div>
 <header class="topbar">
   <div class="wrap">
     <div class="lockup"><img class="s2" src="https://www.systemandsoul.com/hs-fs/hubfs/Logos/System%20and%20Soul%20vector%20source-06.png" alt="System &amp; Soul"></div>
@@ -448,7 +464,7 @@
       <a href="#how" class="btn btn-primary">See how it works</a>
       <a href="#gets" class="btn btn-ghost">What you get</a>
     </div>
-    <p class="fine">Launching October 1 &middot; lock in the starting member rate &middot; from $499/mo.</p>
+    <p class="fine">Launching September 1 &middot; lock in the starting member rate &middot; from $499/mo.</p>
   </div>
 </section>
 
@@ -512,7 +528,7 @@
       <div class="stacklist">
         <div class="row"><div class="ck">&#10003;</div><div><span class="tg">Included</span><h4>On-demand leadership portal</h4><p>Every area of the system in one place, so your whole team learns the same way &mdash; at their own pace, on their own time.</p></div></div>
         <div class="row"><div class="ck">&#10003;</div><div><span class="tg">Included</span><h4>Videos &amp; written playbooks</h4><p>Short trainings and clear, step-by-step playbooks for the tools your team actually uses.</p></div></div>
-        <div class="row"><div class="ck">&#10003;</div><div><span class="tg">Included</span><h4>A live group session every month</h4><p>Q&amp;A, peer discussion with other leaders, and working your real problems together &mdash; guided by us.</p></div></div>
+        <div class="row"><div class="ck">&#10003;</div><div><span class="tg">Included</span><h4>A live group session every month</h4><p>Q&amp;A, peer discussion with other leaders, and working your real problems together &mdash; guided by us. <em>*This is a group call for all members of the program. Private sessions dedicated to just your team are available for an additional fee.</em></p></div></div>
         <div class="row"><div class="ck">&#10003;</div><div><span class="tg">Included</span><h4>Guided rollout for your business</h4><p>We help you adapt the system to how your company actually works, and start where it&rsquo;ll help most. Not off-the-shelf.</p></div></div>
         <div class="row"><div class="ck">&#10003;</div><div><span class="tg">Included</span><h4>Works in tandem with S2 Sync</h4><p>Your team&rsquo;s S2 Sync dashboards and their leadership training run side by side, supporting one another &mdash; and are designed to live together in one place.</p></div></div>
         <div class="row addon"><div class="ck">+</div><div><span class="tg">Optional add-on</span><h4>1:1 coaching, when you want it</h4><p>Add customized one-on-one support for any leader who wants to go deeper.</p></div></div>
@@ -538,15 +554,12 @@
 <section class="curriculum" id="curriculum">
   <div class="wrap">
     <div class="rule"><i></i><i></i><i></i></div>
-    <h2 style="margin-top:24px">Six areas. One system. You start with one.</h2>
-    <p class="areas-lead">These are the six areas of how a healthy company operates. You don&rsquo;t roll them all out at once &mdash; you begin with the one that hurts most, and grow from there.</p>
-    <div class="areas">
-      <div class="area system"><div class="an">Structure &amp; Ownership</div><p>Who owns what &mdash; and who gets to make the call.</p></div>
-      <div class="area system"><div class="an">Operating Pace &amp; Focus</div><p>What winning looks like, and a score everyone can see.</p></div>
-      <div class="area system"><div class="an">Effective Communication</div><p>The message travels, and hard things get said early.</p></div>
-      <div class="area soul"><div class="an">Growing Your People</div><p>Everyone has a path forward, not just the managers.</p></div>
-      <div class="area soul"><div class="an">Culture &amp; Trust</div><p>Truth-telling, and trust that&rsquo;s worth staying for.</p></div>
-      <div class="area strategy"><div class="an">Direction &amp; Focus</div><p>One direction the whole company can move on.</p></div>
+    <h2 style="margin-top:24px">System. Soul. Strategy &mdash; built into how your whole company works.</h2>
+    <p class="areas-lead">You know the framework. Here it is as three moves your whole team lives every day, across six areas. You don&rsquo;t roll it all out at once &mdash; we help you start where it hurts most, and grow from there.</p>
+    <div class="themes">
+      <div class="theme system"><div class="tag">System</div><h3>Design Systems</h3><p>Clear ownership, a steady operating pace, and communication that actually travels.</p><div class="areatags"><span>Structure &amp; Ownership</span><span>Operating Pace &amp; Focus</span><span>Effective Communication</span></div></div>
+      <div class="theme strategy"><div class="tag">Strategy</div><h3>Drive Strategy</h3><p>One clear direction and a short list of bets the whole company can move on together.</p><div class="areatags"><span>Direction &amp; Focus</span></div></div>
+      <div class="theme soul"><div class="tag">Soul</div><h3>Multiply Energy</h3><p>Grow your people, build real trust, and lead in a way people actually want to follow.</p><div class="areatags"><span>Growing Your People</span><span>Culture &amp; Trust</span></div></div>
     </div>
     <div style="margin-top:44px"><a href="#pricing" class="btn btn-primary">See plans &amp; pricing</a></div>
   </div>
@@ -607,13 +620,12 @@
     <div class="rule"><i></i><i></i><i></i></div>
     <h2 style="margin-top:24px;color:#fff">Less than one hire. For your entire company.</h2>
     <p class="anchorline">Hiring a leadership / L&amp;D lead runs <b>$90,000+ a year</b>, before the tools and content. This is your whole company&rsquo;s development &mdash; priced by team size, <b>from $499/mo</b>. An annual partnership, billed monthly.</p>
-    <div class="memberrate"><b>Launching October 1.</b> Join before then and lock in the starting member rate below &mdash; before prices go up.</div>
+    <div class="memberrate"><b>Launching September 1.</b> Join before then and lock in the starting member rate below &mdash; before prices go up.</div>
     <div class="tiers">
       <div class="tier"><div class="sz">1&ndash;10 people</div><div class="pr">$499<small>/mo</small></div><div class="desc">For small teams putting one way of working in place.</div><a href="get-started.html" class="btn btn-primary">Get started</a></div>
       <div class="tier"><div class="sz">11&ndash;20 people</div><div class="pr">$899<small>/mo</small></div><div class="desc">For growing companies aligning multiple teams.</div><a href="get-started.html" class="btn btn-primary">Get started</a></div>
-      <div class="tier"><div class="sz">21&ndash;50 people</div><div class="pr">$1,499<small>/mo</small></div><div class="desc">For mid-size organizations scaling how they lead.</div><a href="get-started.html" class="btn btn-primary">Get started</a></div>
-      <div class="tier"><div class="sz">51&ndash;80 people</div><div class="pr">$1,899<small>/mo</small></div><div class="desc">For established teams making it company-wide.</div><a href="get-started.html" class="btn btn-primary">Get started</a></div>
-      <div class="tier"><div class="sz">81&ndash;100 people</div><div class="pr">$2,499<small>/mo</small></div><div class="desc">For larger organizations rolling it out at scale.</div><a href="get-started.html" class="btn btn-primary">Get started</a></div>
+      <div class="tier"><div class="sz">21&ndash;50 people</div><div class="pr">$1,899<small>/mo</small></div><div class="desc">For mid-size organizations scaling how they lead.</div><a href="get-started.html" class="btn btn-primary">Get started</a></div>
+      <div class="tier"><div class="sz">51&ndash;100 people</div><div class="pr">$2,499<small>/mo</small></div><div class="desc">For larger organizations rolling it out company-wide.</div><a href="get-started.html" class="btn btn-primary">Get started</a></div>
       <div class="tier custom"><div class="sz">100+ people</div><div class="pr">Let&rsquo;s talk</div><div class="desc">Custom pricing for enterprise rollouts across your whole organization.</div><a href="https://calendar.app.google/QuSxK2GUxFQ114YC6" target="_blank" rel="noopener" class="btn btn-light">Book a call</a></div>
     </div>
     <p class="pricenote">Every plan includes the full system &mdash; the online platform, videos, monthly group session, and guided rollout &mdash; built to work in tandem with S2 Sync. <b>1:1 coaching is available as an add-on.</b> Not sure which tier fits, or growing fast? <a href="https://calendar.app.google/QuSxK2GUxFQ114YC6" target="_blank" rel="noopener" style="color:#fff;text-decoration:underline;font-weight:600">Book a call</a> and we&rsquo;ll build the right plan with you.</p>
