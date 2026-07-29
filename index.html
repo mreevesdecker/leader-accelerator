@@ -399,6 +399,27 @@
   .pbox p{font-size:1.1rem;line-height:1.65;margin:20px auto 0;max-width:720px}
   .pbox p b{color:#fff;font-weight:600}
 
+  /* ---- CEO Refuel bonuses ---- */
+  .bonus{background:var(--paper)}
+  .bonus .ribbon{display:inline-block;background:var(--soul);color:#fff;font-size:.7rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;padding:8px 16px;border-radius:99px}
+  .bonus h2{margin-top:18px}
+  .bongrid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:44px}
+  .boncard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:36px 34px;position:relative;box-shadow:0 1px 3px rgba(60,66,88,.05)}
+  .boncard .val{position:absolute;top:22px;right:22px;background:rgba(251,183,49,.22);color:var(--system-ink);font-size:.72rem;font-weight:700;padding:6px 12px;border-radius:99px;letter-spacing:.03em}
+  .boncard .ttm{display:block;width:210px;max-width:72%;margin:4px 0 18px}
+  .boncard h3{font-size:1.3rem;margin-bottom:10px;max-width:82%}
+  .boncard p{font-size:.95rem}
+  .boncard ul{list-style:none;margin-top:16px}
+  .boncard li{padding:9px 0 9px 26px;position:relative;font-size:.94rem;border-bottom:1px solid var(--line)}
+  .boncard li:last-child{border-bottom:0}
+  .boncard li:before{content:"+";position:absolute;left:0;top:8px;color:var(--soul);font-weight:700}
+  .boncard .fine{font-size:.82rem;color:var(--gray);margin-top:14px;line-height:1.55}
+  .bontotal{margin-top:32px;background:var(--navy);color:#fff;border-radius:18px;padding:30px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+  .bontotal .big{font-size:1.45rem;font-weight:700;color:#fff}
+  .bontotal .big span{color:var(--sky);font-weight:500;font-size:1rem;display:block;margin-top:4px}
+  .bontotal .btn{white-space:nowrap}
+  @media(max-width:820px){.bongrid{grid-template-columns:1fr}}
+
   /* ---- subscription tiers ---- */
   .anchorline{max-width:720px;margin-top:14px;color:var(--sky);font-size:1.05rem}
   .anchorline b{color:#fff;font-weight:600}
@@ -440,12 +461,13 @@
 <div class="launch">Launching <b>September 1</b> &mdash; get in now at the starting member rate. <a href="https://calendar.app.google/QuSxK2GUxFQ114YC6" target="_blank" rel="noopener">Save your spot &rarr;</a></div>
 <header class="topbar">
   <div class="wrap">
-    <div class="lockup"><img class="s2" src="https://www.systemandsoul.com/hs-fs/hubfs/Logos/System%20and%20Soul%20vector%20source-06.png" alt="System &amp; Soul"></div>
+    <div class="lockup"><img class="s2" src="s2-logo.png" alt="System &amp; Soul"></div>
     <nav class="nav">
       <a href="#problem">The Problem</a>
       <a href="#how">How It Works</a>
       <a href="#gets">What You Get</a>
       <a href="#curriculum">The System</a>
+      <a href="#bonus">Bonuses</a>
       <a href="#pricing">Pricing</a>
     </nav>
     <a href="#how" class="btn btn-primary btn-sm">See how it works</a>
@@ -614,13 +636,52 @@
   </div>
 </section>
 
+<!-- ================= CEO REFUEL BONUSES ================= -->
+<section class="bonus" id="bonus">
+  <div class="wrap">
+    <span class="ribbon">Exclusive for CEO Refuel attendees</span>
+    <h2>Two bonuses, free &mdash; when you claim them before August 31.</h2>
+    <p style="max-width:730px;margin-top:14px">You were in the room. Join the Leader Accelerator before our September 1 launch and we&rsquo;ll add two bonuses worth <b>$2,200+</b>, on the house. Both expire August 31.</p>
+    <div class="bongrid">
+      <div class="boncard">
+        <span class="val">$1,000+ value</span>
+        <a href="https://thinktalkmeet.com/" target="_blank" rel="noopener"><img class="ttm" src="ttm-black.png" alt="Think. Talk. Meet. &mdash; like a book club for thinking"></a>
+        <h3>3 free months of Think. Talk. Meet.</h3>
+        <p>Derrick Mains&rsquo; membership club &mdash; like a book club for thinking (<a href="https://thinktalkmeet.com/" target="_blank" rel="noopener" style="color:var(--soul);font-weight:600;text-decoration:underline">thinktalkmeet.com</a>). Free seats for three months, scaled to your plan:</p>
+        <ul>
+          <li><b>1&ndash;10 plan</b> &rarr; 1 seat free</li>
+          <li><b>11&ndash;20 plan</b> &rarr; 2 seats free</li>
+          <li><b>21&ndash;50 plan</b> &rarr; 3 seats free</li>
+          <li><b>51&ndash;100 plan</b> &rarr; 4 seats free</li>
+        </ul>
+        <div class="fine">Membership is $358/mo per seat &mdash; yours free for three full months. <em>*After three months, this membership continues at $358/month per seat only if you choose to keep it.</em></div>
+      </div>
+      <div class="boncard">
+        <span class="val">$1,200 value</span>
+        <h3>Done-for-you team onboarding</h3>
+        <p>Our team personally launches the program for you, so it lands with your people from day one:</p>
+        <ul>
+          <li>A personal kickoff call to introduce the program to your team</li>
+          <li>We onboard your members ourselves</li>
+          <li>A working session with our experts to design your custom monthly content plan</li>
+        </ul>
+        <div class="fine">A $1,200 value, included free when you join before August 31.</div>
+      </div>
+    </div>
+    <div class="bontotal">
+      <div class="big">$2,200+ in bonuses, free.<span>Claim them by joining before August 31.</span></div>
+      <a href="get-started.html" class="btn btn-primary">Get started</a>
+    </div>
+  </div>
+</section>
+
 <!-- ================= PRICING (at the end) ================= -->
 <section class="pricing" id="pricing">
   <div class="wrap">
     <div class="rule"><i></i><i></i><i></i></div>
     <h2 style="margin-top:24px;color:#fff">Less than one hire. For your entire company.</h2>
     <p class="anchorline">Hiring a leadership / L&amp;D lead runs <b>$90,000+ a year</b>, before the tools and content. This is your whole company&rsquo;s development &mdash; priced by team size, <b>from $499/mo</b>. An annual partnership, billed monthly.</p>
-    <div class="memberrate"><b>Launching September 1.</b> Join before then and lock in the starting member rate below &mdash; before prices go up.</div>
+    <div class="memberrate"><b>Launching September 1.</b> Join before then to lock in the starting member rate &mdash; plus <b>$2,200+ in attendee bonuses</b> when you claim by August 31.</div>
     <div class="tiers">
       <div class="tier"><div class="sz">1&ndash;10 people</div><div class="pr">$499<small>/mo</small></div><div class="desc">For small teams putting one way of working in place.</div><a href="get-started.html" class="btn btn-primary">Get started</a></div>
       <div class="tier"><div class="sz">11&ndash;20 people</div><div class="pr">$899<small>/mo</small></div><div class="desc">For growing companies aligning multiple teams.</div><a href="get-started.html" class="btn btn-primary">Get started</a></div>
@@ -658,7 +719,7 @@
 
 <footer>
   <div class="wrap">
-    <div class="lockup"><img class="s2" src="https://www.systemandsoul.com/hs-fs/hubfs/Logos/System%20and%20Soul%20vector%20source-06.png" alt="System &amp; Soul"></div>
+    <div class="lockup"><img class="s2" src="s2-logo.png" alt="System &amp; Soul"></div>
     <p>&copy; System &amp; Soul. One shared way for your whole company to lead, work, and win.</p>
   </div>
 </footer>
